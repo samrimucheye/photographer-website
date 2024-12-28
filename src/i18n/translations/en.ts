@@ -5,6 +5,7 @@ export default {
     gallery: "Gallery",
     services: "Services",
     contact: "Contact",
+    QuickLinks: "QuickLinks",
   },
   home: {
     hero: {
@@ -47,7 +48,8 @@ export default {
   about: {
     title: "About PhotoArt",
     subtitle:
-      "With over a decade of experience, we specialize in capturing life's precious moments",
+      "With over a decade of experience, we specialize in capturing life's most precious moments through the lens of artistic  excellence.",
+
     stats: {
       experience: "Years Experience",
       sessions: "Photo Sessions",
@@ -56,9 +58,9 @@ export default {
     },
     story: {
       title: "Our Story",
-      p1: "For over 10 years, we've been privileged to capture the most significant moments in people's lives.",
-      p2: "We specialize in wedding photography and Bar/Bat Mitzvah celebrations, bringing technical expertise and artistic vision to every event.",
-      p3: "Our approach combines traditional photography techniques with modern technology.",
+      p1: "For over 10 years, we've been privileged to capture the most significant moments in people's lives. Our journey began with a passion for photography and has evolved into a commitment to excellence in visual storytelling.",
+      p2: "We specialize in wedding photography and Bar/Bat Mitzvah celebrations, bringing technical expertise and artistic vision to every event we photograph.",
+      p3: "Our approach combines traditional photography techniques with modern technology, ensuring that every image we create is both timeless and contemporary.",
     },
   },
   services: {
@@ -103,6 +105,7 @@ export default {
   contact: {
     title: "Contact Us",
     subtitle: "Get in touch to discuss your photography needs",
+    getInTouch: "Get in Touch",
     form: {
       name: "Name",
       email: "Email",
@@ -117,6 +120,7 @@ export default {
     },
   },
   footer: {
+    title: "Capturing life's precious moments with artistic excellence.",
     copyRight: "PhotoArt. All rights reserved.",
   },
 };

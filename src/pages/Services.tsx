@@ -8,7 +8,8 @@ const Services = () => {
   const { t } = useTranslation();
   const packages = [
     {
-      name: "Essential",
+      // name: "Essential",
+      name: t("services.packages.essential.name"),
       price: "$999",
       features: [
         "4 Hours Coverage",
@@ -18,7 +19,7 @@ const Services = () => {
       ],
     },
     {
-      name: "Premium",
+      name: t("services.packages.premium.name"),
       price: "$1,999",
       features: [
         "8 Hours Coverage",
@@ -30,7 +31,7 @@ const Services = () => {
       ],
     },
     {
-      name: "Luxury",
+      name: t("services.packages.luxury.name"),
       price: "$2,999",
       features: [
         "Full Day Coverage",

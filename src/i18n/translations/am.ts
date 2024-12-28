@@ -5,6 +5,7 @@ export default {
     gallery: "ጋለሪ",
     services: "አገልግሎቶች",
     contact: "አግኙን",
+    QuickLinks: "ቀላል መያዣዎች",
   },
   home: {
     hero: {
@@ -43,7 +44,8 @@ export default {
   },
   about: {
     title: "ስለ PhotoArt",
-    subtitle: "ከአስር ዓመት በላይ ልምድ ያለን፣ የህይወትን ውድ ጊዜያት በፎቶ ለማስቀመጥ እንተጋለን",
+    subtitle:
+      "ከአስር ዓመት በላይ ልምድ ያለን፣ የህይወትን ውድ ጊዜያት በፎቶ ለማስቀመጥ እንተጋለን በሥነ-ጥበባዊ ብልጽግና እና ተግባራዊ እንቅስቃሴ መካከል እጅግ ከፍተኛና የተከበሩ ቀናትን በካሜራ መስኮት ለማስቀመጥ እንተጋለን  ።",
     stats: {
       experience: "የልምድ ዓመታት",
       sessions: "የፎቶ ክፍለ ጊዜያት",
@@ -99,6 +101,7 @@ export default {
   contact: {
     title: "አግኙን",
     subtitle: "ስለ ፎቶግራፍ ፍላጎትዎ ለመወያየት ያግኙን",
+    getInTouch: "አግኙኝ",
     form: {
       name: "ስም",
       email: "ኢሜይል",
@@ -114,5 +117,6 @@ export default {
   },
   footer: {
     copyRight: "ፎቶአርት። ሁሉም መብቶች የተጠበቁ ናቸው።",
+    title: "የህይወት ውድ አስተያየቶችን በአርቲስቲክ ብልጽግና መዝናናት።",
   },
 };

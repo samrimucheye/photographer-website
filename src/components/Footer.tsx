@@ -1,6 +1,5 @@
-import { useTranslation } from "react-i18next";
 import { Camera, Instagram, Facebook, Twitter } from "lucide-react";
-
+import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -13,13 +12,13 @@ const Footer = () => {
               <Camera className="h-8 w-8 text-indigo-400" />
               <span className="ml-2 text-xl font-bold">PhotoArt</span>
             </div>
-            <p className="text-gray-400">
-              Capturing life's precious moments with artistic excellence.
-            </p>
+            <p className="text-gray-400">{t("footer.title")}</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("nav.QuickLinks")}
+            </h3>
             <ul className="space-y-2">
               {["home", "about", "gallery", "services", "contact"].map(
                 (item) => (
@@ -37,7 +36,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">{t("contact.title")}</h3>
             <ul className="text-gray-400 space-y-2">
               <li>123 Photography St.</li>
               <li>City, State 12345</li>
@@ -47,7 +46,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t("contact.info.follow")}
+            </h3>
             <div className="flex space-x-4">
               <a
                 href="#"

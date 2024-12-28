@@ -1,34 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import { Gallery as PhotoSwipeGallery, Item } from 'react-photoswipe-gallery';
+import React from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { Gallery as PhotoSwipeGallery, Item } from "react-photoswipe-gallery";
 
 const Gallery = () => {
   const { t } = useTranslation();
 
   const categories = [
     {
-      name: 'Wedding',
+      name: t("gallery.categories.wedding"),
       images: [
-        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc',
-        'https://images.unsplash.com/photo-1519741497674-611481863552',
-        'https://images.unsplash.com/photo-1519225421980-715cb0215aed',
+        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
+        "https://images.unsplash.com/photo-1519741497674-611481863552",
+        "https://images.unsplash.com/photo-1519225421980-715cb0215aed",
       ],
     },
     {
-      name: 'Bar Mitzvah',
+      name: t("gallery.categories.barMitzvah"),
       images: [
-        'https://images.unsplash.com/photo-1472653431158-6364773b2a56',
-        'https://images.unsplash.com/photo-1519225421980-715cb0215aed',
-        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc',
+        "https://images.unsplash.com/photo-1472653431158-6364773b2a56",
+        "https://images.unsplash.com/photo-1519225421980-715cb0215aed",
+        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
       ],
     },
     {
-      name: 'Portrait',
+      name: t("gallery.categories.portrait"),
       images: [
-        'https://images.unsplash.com/photo-1519225421980-715cb0215aed',
-        'https://images.unsplash.com/photo-1511285560929-80b456fea0bc',
-        'https://images.unsplash.com/photo-1472653431158-6364773b2a56',
+        "https://images.unsplash.com/photo-1519225421980-715cb0215aed",
+        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
+        "https://images.unsplash.com/photo-1472653431158-6364773b2a56",
       ],
     },
   ];
@@ -42,7 +42,9 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Gallery</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            {t("gallery.categories.wedding")}
+          </h1>
           <p className="text-xl text-gray-600">
             Explore our collection of memorable moments
           </p>
@@ -71,7 +73,9 @@ const Gallery = () => {
                       {({ ref, open }) => (
                         <div
                           onClick={open}
-                          ref={ref as React.RefObject<HTMLDivElement>}
+                          ref={
+                            ref as unknown as React.RefObject<HTMLDivElement>
+                          }
                           className="cursor-pointer"
                         >
                           <img
@@ -81,7 +85,7 @@ const Gallery = () => {
                           />
                           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
                             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                              {t('gallery.viewLarge')}
+                              {t("gallery.viewLarge")}
                             </span>
                           </div>
                         </div>

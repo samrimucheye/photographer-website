@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Camera, Award, Users, Clock } from "lucide-react";
@@ -7,10 +6,10 @@ const About = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { icon: Clock, value: "10+", label: "Years Experience" },
-    { icon: Camera, value: "1000+", label: "Photo Sessions" },
-    { icon: Users, value: "500+", label: "Happy Clients" },
-    { icon: Award, value: "25+", label: "Awards Won" },
+    { icon: Clock, value: "10+", label: t("about.stats.experience") },
+    { icon: Camera, value: "1000+", label: t("about.stats.sessions") },
+    { icon: Users, value: "500+", label: t("about.stats.clients") },
+    { icon: Award, value: "25+", label: t("about.stats.awards") },
   ];
 
   return (
@@ -26,9 +25,10 @@ const About = () => {
               {t("about.title")}
             </h1>
             <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
-              With over a decade of experience, we specialize in capturing
+              {/* With over a decade of experience, we specialize in capturing
               life's most precious moments through the lens of artistic
-              excellence.
+              excellence. */}
+              {t("about.subtitle")}
             </p>
           </motion.div>
 
@@ -77,20 +77,23 @@ const About = () => {
                 {t("about.story.title")}
               </h2>
               <p className="text-gray-600 mb-4">
-                For over 10 years, we've been privileged to capture the most
+                {/* For over 10 years, we've been privileged to capture the most
                 significant moments in people's lives. Our journey began with a
                 passion for photography and has evolved into a commitment to
-                excellence in visual storytelling.
+                excellence in visual storytelling. */}
+                {t("about.story.p1")}
               </p>
               <p className="text-gray-600 mb-4">
-                We specialize in wedding photography and Bar/Bat Mitzvah
+                {/* We specialize in wedding photography and Bar/Bat Mitzvah
                 celebrations, bringing technical expertise and artistic vision
-                to every event we photograph.
+                to every event we photograph. */}
+                {t("about.story.p2")}
               </p>
               <p className="text-gray-600">
-                Our approach combines traditional photography techniques with
+                {/* Our approach combines traditional photography techniques with
                 modern technology, ensuring that every image we create is both
-                timeless and contemporary.
+                timeless and contemporary. */}
+                {t("about.story.p3")}
               </p>
             </motion.div>
           </div>
